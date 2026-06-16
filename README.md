@@ -78,6 +78,7 @@ CTE (WITH) — supply vs demand gap analysis with two CTEs joined
 | Question | Where to look |
 |---|---|
 | What are we currently holding? | Q1 — Active listings query |
+| Count and value by type and status | Q2 - Pipeline Summary |
 | Which localities do buyers want most? | Q3 — Demand heatmap |
 | Where is supply not meeting demand? | Q4 — Supply vs demand CTE |
 | How many showings/meetings to close a deal? | Q5 — Buyer journey query |
