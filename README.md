@@ -67,14 +67,6 @@ entity, so tracking "which agent" handled a deal adds nothing.
 | `meetings` | 65 | The joint buyer-seller negotiation — separate from showings because it's a fundamentally different business event |
 | `transactions` | 31 | Closed sales with commission split by side, status (Pending/Received), and method |
 
-Two deliberate design choices worth explaining in an interview:
-- **Showings and meetings are separate tables**, not stages of one record,
-  because a buyer can be shown a property and never request a meeting,
-  or skip showings entirely and go straight to a meeting (modelled
-  explicitly — see property_id 4 in the data).
-- **Commission has independent Pending/Received status per side**
-  because the seller and buyer rarely pay at the same time, and tracking
-  this separately is what makes a real cash-flow view possible.
 
 ---
 
